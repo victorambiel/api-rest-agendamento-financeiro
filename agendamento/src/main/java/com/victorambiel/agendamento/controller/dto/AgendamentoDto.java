@@ -6,7 +6,6 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import org.springframework.data.domain.Page;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import com.victorambiel.agendamento.model.Agendamento;
@@ -28,6 +27,7 @@ public class AgendamentoDto {
 	}
 	
 	public AgendamentoDto(Agendamento agendamento) {
+		this.id = agendamento.getId();
 		this.contaDeOrigem = agendamento.getContaDeOrigem();
 		this.contaDeDestino = agendamento.getContaDeDestino();
 		this.valorDaTransferencia = agendamento.getValorDaTransferencia();
@@ -95,12 +95,8 @@ public class AgendamentoDto {
 		return new Agendamento(contaDeOrigem, contaDeDestino, valorDaTransferencia, taxa, dataDaTransferencia);
 	}
 	
-	public static Page<AgendamentoDto> converter(Page<Agendamento> agendamentos) {
-		return agendamentos.map(AgendamentoDto::new);
-	}
-	
-	public static List<AgendamentoDto> converter(List<Agendamento> topicos) {
-		return topicos.stream().map(AgendamentoDto::new).collect(Collectors.toList());
+	public static List<AgendamentoDto> converter(List<Agendamento> agendamento) {
+		return agendamento.stream().map(AgendamentoDto::new).collect(Collectors.toList());
 	}
 
 }
