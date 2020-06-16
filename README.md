@@ -13,6 +13,7 @@ Com essas informações faz o cálculo do valor da taxa da transferência e reto
 - Spring Boot 2.3.1
 - Maven
 - Banco de Dados H2
+- JUnit
 - [Postman](https://www.postman.com/) (para teste das requisições)
 - Docker (opcional)
 
