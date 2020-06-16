@@ -19,9 +19,9 @@ Com essas informações faz o cálculo do valor da taxa da transferência e reto
 ### Como rodar:
 Há três maneiras de rodar o projeto localmente:
 
- 1. O projeto pode ser importado para alguma IDE de preferência e executado. 
+ 1. O projeto pode ser importado para alguma IDE e executado. 
  2. Fazer o build do projeto com o maven *./mvnw install* e rodar o *.jar* criado dentro da pasta target.
- 3. **(Necessário ter o Docker instalado)** Utilizar o script ([build-and-run-docker.sh](https://github.com/victorambiel/api-rest-agendamento-financeiro/blob/master/agendamento/build-and-run-docker.sh)) que contém dentro do projeto. O script todo o processo de buildar o projeto, criar uma imagem Docker com o *.jar* e rodar a imagem com o serviço.
+ 3. **(Necessário ter o Docker instalado)** Utilizar o script ([build-and-run-docker.sh](https://github.com/victorambiel/api-rest-agendamento-financeiro/blob/master/agendamento/build-and-run-docker.sh)) que contém dentro do projeto. O script faz todo o processo de buildar o projeto, criar uma imagem Docker com o *.jar* e rodar a imagem com o serviço.
 
 Nos três casos, o endereço para fazer as requisições do serviço é http://localhost:8080/agendamento
 
