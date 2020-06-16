@@ -25,67 +25,86 @@ Há três maneiras de rodar o projeto localmente:
 
 Nos três casos, o endereço para fazer as requisições do serviço é http://localhost:8080/agendamento
 
-### Exemplos de Testes
+### Exemplos de Listar Agendamentos
+É possível visualizar todos os agendamento realizando uma requisição **GET (Postman)** no endereço http://localhost:8080/agendamento. Sem nenhum filtro irá retornar todos os agendamentos. É possível filtrar por valor da transferência e data da transferência.
+
+**Exemplo 1 - Sem nenhum filtro**
+
+http://localhost:8080/agendamento
+
+**Exemplo 2 - Filtrar por Valor da Transferência**
+
+http://localhost:8080/agendamento?valorDaTransferencia=100
+
+**Exemplo 3 - Filtrar por Data da Transferência**
+
+http://localhost:8080/agendamento?dataDaTransferencia=2020-06-15
+
+**Exemplo 4 - Filtrar por Valor e Data da Transferência**
+
+http://localhost:8080/agendamento?valorDaTransferencia=100&dataDaTransferencia=2020-06-15
+
+### Exemplos de Cadastrar Agendamento
+Os agendamentos são realizados fazendo requisições **POST (Postman)** no endereço http://localhost:8080/agendamento com um JSON no padrão dos exemplos abaixo.
+
 **Exemplo 1 - Taxa Tipo A**
 JSON de Requisição:
 
     {
-    "contaDeOrigem": 123456,
-    "contaDeDestino": 117722,
-    "valorDaTransferencia": 100.00,
-    "dataDaTransferencia": "2020-07-15"
+       "contaDeOrigem": 123456,
+       "contaDeDestino": 117722,
+       "valorDaTransferencia": 100.00,
+       "dataDaTransferencia": "2020-07-15"
     }
 
 JSON de Retorno:
 
     {
-    "id":  1,
-    "contaDeOrigem":  123456,
-    "valorDaTransferencia": 100.00,
-    "taxa":  6.0000,
-    "dataDaTransferencia":  "2020-07-15",
-    "dataDeAgendamento":  "2020-06-15T21:54:18.055917"
+       "id":  1,
+       "contaDeOrigem":  123456,
+       "valorDaTransferencia": 100.00,
+       "taxa":  6.0000,
+       "dataDaTransferencia":  "2020-07-15",
+       "dataDeAgendamento":  "2020-06-15T21:54:18.055917"
     }
 
 **Exemplo 2 - Taxa Tipo B**
 JSON de Requisição:
 
     {
-    "contaDeOrigem": 123456,
-    "contaDeDestino": 117722,
-    "valorDaTransferencia": 100.00,
-    "dataDaTransferencia": "2020-06-24"
+       "contaDeOrigem": 123456,
+       "contaDeDestino": 117722,
+       "valorDaTransferencia": 100.00,
+       "dataDaTransferencia": "2020-06-24"
     }
 
 JSON de Retorno:
 
     {
-    "id":  2,
-    "contaDeOrigem":  123456,
-    "valorDaTransferencia": 100.00,
-    "taxa":  108.0000,
-    "dataDaTransferencia":  "2020-06-24",
-    "dataDeAgendamento":  "2020-06-15T21:54:18.055917"
+       "id":  2,
+       "contaDeOrigem":  123456,
+       "valorDaTransferencia": 100.00,
+       "taxa":  108.0000,
+       "dataDaTransferencia":  "2020-06-24",
+       "dataDeAgendamento":  "2020-06-15T21:54:18.055917"
     }
 **Exemplo 3 - Taxa Tipo C (Até 20 Dias)**
 JSON de Requisição:
 
     {
-    "contaDeOrigem": 123456,
-    "contaDeDestino": 117722,
-    "valorDaTransferencia": 100.00,
-    "dataDaTransferencia": "2020-06-24"
+       "contaDeOrigem": 123456,
+       "contaDeDestino": 117722,
+       "valorDaTransferencia": 100.00,
+       "dataDaTransferencia": "2020-06-24"
     }
 
 JSON de Retorno:
 
     {
-    "id":  3,
-    "contaDeOrigem":  123456,
-    "valorDaTransferencia": 100.00,
-    "taxa":  8.0000,
-    "dataDaTransferencia":  "2020-06-26",
-    "dataDeAgendamento":  "2020-06-15T21:54:18.055917"
+       "id":  3,
+       "contaDeOrigem":  123456,
+       "valorDaTransferencia": 100.00,
+       "taxa":  8.0000,
+       "dataDaTransferencia":  "2020-06-26",
+       "dataDeAgendamento":  "2020-06-15T21:54:18.055917"
     }
-
-
