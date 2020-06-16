@@ -62,6 +62,7 @@ JSON de Retorno:
     {
        "id":  1,
        "contaDeOrigem":  123456,
+       "contaDeDestino": 117722,
        "valorDaTransferencia": 100.00,
        "taxa":  6.0000,
        "dataDaTransferencia":  "2020-07-15",
@@ -83,6 +84,7 @@ JSON de Retorno:
     {
        "id":  2,
        "contaDeOrigem":  123456,
+       "contaDeDestino": 117722,
        "valorDaTransferencia": 100.00,
        "taxa":  108.0000,
        "dataDaTransferencia":  "2020-06-24",
@@ -103,6 +105,7 @@ JSON de Retorno:
     {
        "id":  3,
        "contaDeOrigem":  123456,
+       "contaDeDestino": 117722,
        "valorDaTransferencia": 100.00,
        "taxa":  8.0000,
        "dataDaTransferencia":  "2020-06-26",
