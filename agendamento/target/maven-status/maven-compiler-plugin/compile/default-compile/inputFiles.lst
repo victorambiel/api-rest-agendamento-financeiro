@@ -1,0 +1,16 @@
+/home/victor/repos/api-rest-agendamento-financeiro/agendamento/src/main/java/com/victorambiel/agendamento/validation/TaxaNaoAplicavelHandler.java
+/home/victor/repos/api-rest-agendamento-financeiro/agendamento/src/main/java/com/victorambiel/agendamento/operations/CalculoTaxaA.java
+/home/victor/repos/api-rest-agendamento-financeiro/agendamento/src/main/java/com/victorambiel/agendamento/controller/dto/AgendamentoDto.java
+/home/victor/repos/api-rest-agendamento-financeiro/agendamento/src/main/java/com/victorambiel/agendamento/AgendamentoApplication.java
+/home/victor/repos/api-rest-agendamento-financeiro/agendamento/src/main/java/com/victorambiel/agendamento/controller/AgendamentoController.java
+/home/victor/repos/api-rest-agendamento-financeiro/agendamento/src/main/java/com/victorambiel/agendamento/operations/TipoDaTaxa.java
+/home/victor/repos/api-rest-agendamento-financeiro/agendamento/src/main/java/com/victorambiel/agendamento/model/Agendamento.java
+/home/victor/repos/api-rest-agendamento-financeiro/agendamento/src/main/java/com/victorambiel/agendamento/validation/TaxaNaoAplicavelException.java
+/home/victor/repos/api-rest-agendamento-financeiro/agendamento/src/main/java/com/victorambiel/agendamento/operations/CalculoTaxaB.java
+/home/victor/repos/api-rest-agendamento-financeiro/agendamento/src/main/java/com/victorambiel/agendamento/operations/CalculoTaxaC.java
+/home/victor/repos/api-rest-agendamento-financeiro/agendamento/src/main/java/com/victorambiel/agendamento/util/QuantosDias.java
+/home/victor/repos/api-rest-agendamento-financeiro/agendamento/src/main/java/com/victorambiel/agendamento/validation/DataDaTransferenciaInvalidaHandler.java
+/home/victor/repos/api-rest-agendamento-financeiro/agendamento/src/main/java/com/victorambiel/agendamento/operations/CalculoTaxa.java
+/home/victor/repos/api-rest-agendamento-financeiro/agendamento/src/main/java/com/victorambiel/agendamento/validation/ErroMensagemDto.java
+/home/victor/repos/api-rest-agendamento-financeiro/agendamento/src/main/java/com/victorambiel/agendamento/repository/AgendamentoRepository.java
+/home/victor/repos/api-rest-agendamento-financeiro/agendamento/src/main/java/com/victorambiel/agendamento/validation/DataDaTransferenciaInvalidaException.java
