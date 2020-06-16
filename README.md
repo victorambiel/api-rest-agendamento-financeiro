@@ -23,7 +23,7 @@ Há três maneiras de rodar o projeto localmente:
  2. Fazer o build do projeto com o maven *./mvnw install* e rodar o *.jar* criado dentro da pasta target.
  3. **(Necessário ter o Docker instalado)** Utilizar o script ([build-and-run-docker.sh](https://github.com/victorambiel/api-rest-agendamento-financeiro/blob/master/agendamento/build-and-run-docker.sh)) que contém dentro do projeto. O script todo o processo de buildar o projeto, criar uma imagem Docker com o *.jar* e rodar a imagem com o serviço.
 
-Nos três casos, o endereço para fazer as requisições do serviço é http://localhost:8080
+Nos três casos, o endereço para fazer as requisições do serviço é http://localhost:8080/agendamento
 
 ### Exemplos de Testes
 **Exemplo 1 - Taxa Tipo A**
